@@ -1,0 +1,201 @@
+body{
+  font-family: "calibri", "sans-serif";
+  letter-spacing: normal !important;
+  font-size: 13px;
+}
+body .form-control{
+  text-transform: none;
+  font-family: "sans-serif";
+  letter-spacing: normal;
+  font-size: 12px;
+}
+.font-alt{
+  letter-spacing: normal;
+  font-family: GantariRegular;
+}
+
+@font-face {
+  font-family: "GantariRegular";
+  src: url("../fonts/Gantari-Regular.ttf");
+}
+
+/*--------------------------------------------------------------
+	Common
+--------------------------------------------------------------*/
+
+.navbar-brand img{
+  max-height: 2em;
+  margin-top: -7px;
+}
+.navbar-custom{
+  font-size: 14px;
+  letter-spacing: normal;
+  background:#330707;
+}
+.bg-dark,
+.navbar-custom .dropdown-menu {
+  font-size: 14px;
+  background: #330707;
+}
+.navbar-custom .dropdown-menu > li > a{
+  letter-spacing: normal;
+}
+.navbar-custom .nav li > a{
+}
+.navbar-right{
+  margin-top: 15px;
+}
+.navbar-custom .navbar-brand{
+  font-size: 35px;
+}
+.navbar-header{
+  padding-bottom: 30px;
+}
+/*--------------------------------------------------------------
+	Header
+--------------------------------------------------------------*/
+.home-section {
+  position: relative;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  z-index: 0;
+  background-size: cover;
+  margin-top: 80px;
+}
+
+.home-no-height{
+  height: 0px !important;
+}
+
+.module-padding-top-off{
+  padding-top: 10px;
+}
+
+.typeahead-dropdown,
+.typeahead-list {
+	top: 30px !important;
+}
+
+.no-textupper{
+  text-transform: none !important;
+}
+
+.fec_listing{
+  overflow: auto;
+  border:1px solid #F9F9F9;
+  padding: 2px;
+  padding-top: 1px;
+  padding-bottom: 25px;
+}
+.fec_row_left{
+  float: left;
+}
+.fec_row_right{
+  float: left;
+}
+.fec_gal{
+
+}
+.fec_gal img{
+  height:80px;
+  max-width:120px
+}
+
+a .nav_dash_x:hover{
+  overflow: hidden;
+  background: #FEFEFE;
+  border: 1px solid #eee;
+}
+
+.nav_highlight{
+  background: #F9F9F9;
+  border: 1px solid #eee;
+}
+
+.dash-big-txt-box{
+  border: 1px solid #CCC;
+  margin-bottom: -1px;
+  margin-left: -1px;
+}
+.dash-big-txt-itm{
+  font-size: 2.0em;
+  text-align: center;
+}
+.dash-big-txt-desc{
+  text-align: center;
+}
+
+.large-warning{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: red;
+}
+
+.radio_button_holder span{
+  float: left;
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: -1px;
+}
+.radio_button_holder input{
+  float: left;
+  display: block;
+}
+.btn-thin{
+  padding: 3px 2px !important;
+}
+
+.module-title{
+  text-align: center;
+}
+
+.module-extra-small .callout-text.font-alt h4, .module-extra-small .callout-text.font-alt p{
+  margin: 0;
+  padding: 0;
+  content: "";
+  height: 0;
+}
+
+.pseudo-row-holder{
+  padding: 2px;
+  border: 1px solid #EEE;
+  margin-bottom: -1px;
+}
+.pseudo-row{
+
+}
+
+.item-list{
+  padding: 5px;
+  border: 1px aliceblue solid;
+}
+
+.nav-payment-but{
+  padding: 5px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin: 10px;
+  margin-left: 10px;
+}
+.nav-payment-but:hover{
+  background: #337ab7 !important;
+  color: #FFF;
+}
+
+.visible-links{
+  color: blue;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 3px 6px;
+}
+.overflow-x{
+  overflow-x: scroll;
+}
+
+.hero-slider .slides li{
+  background-position: top center;
+}

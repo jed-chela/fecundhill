@@ -1,0 +1,21 @@
+@media screen and (min-width: 1040px) {
+  
+  .mobile_visible{ 
+    visibility:hidden;
+  }
+  .mobile_only{ 
+    display:none;
+  }
+  .desktop_only, .desktop-only{
+    display: block;
+  }
+
+  .navbar-brand img{
+    max-height: 2em;
+  }
+  .module-title{
+    text-align: left;
+  }
+
+
+}

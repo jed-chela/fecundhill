@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TopBox Lightbox</title>
+	<link rel="stylesheet" media="screen" href="src/css/topbox.css" />
+
+	<!-- Optional skins 
+	<link rel="stylesheet" media="screen" href="src/skins/blue_hue/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/eye_watering/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/forest/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/forty_five/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/keyboard/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/impact/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/intense_kiss/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/minimal/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/mint/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/monospace/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/pulse/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/spring_pop/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/stripes/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/vivid/styles.css" />
+	<link rel="stylesheet" media="screen" href="src/skins/whiteout/styles.css" />
+-->
+</head>
+
+<body>
+
+	
+
+					<a href="demo/gallery-image-1.jpg" class="button lightbox" aria-haspopup="dialog" data-lightbox-gallery="mygallery" title="1 / 5">Example Gallery</a>
+					<a href="demo/gallery-image-2.jpg" class="lightbox" aria-haspopup="dialog" data-lightbox-gallery="mygallery" title="2 / 5" hidden>Example Gallery</a>
+					<a href="demo/gallery-image-3.jpg" class="lightbox" aria-haspopup="dialog" data-lightbox-gallery="mygallery" title="3 / 5" hidden>Example Gallery</a>
+					<a href="demo/gallery-image-4.jpg" class="lightbox" aria-haspopup="dialog" data-lightbox-gallery="mygallery" title="4 / 5" hidden>Example Gallery</a>
+					<a href="demo/gallery-image-5.jpg" class="lightbox" aria-haspopup="dialog" data-lightbox-gallery="mygallery" title="5 / 5" hidden>Example Gallery</a>
+
+	<!-- jQuery Call -->
+	<script src="src/js/jquery-3.3.1.min.js"></script>
+
+	<!-- TopBox Javascript -->
+	<script src="src/js/topbox.js"></script>
+
+	<!-- Initiate the TopBox plugin -->
+	<script>
+		$(document).ready(function() {
+			$('.lightbox').topbox({
+				skin: 'darkroom',
+				afterShowLightbox: function(lightbox){
+					const player = new Plyr('#player', {
+						/* Player options */
+						autoplay: true
+					});
+				},
+				backgroundBlur: false
+			});
+
+			// Extra - Trigger a TopBox via a page anchor
+			if (window.location.hash) {
+				var hashValue = location.hash.replace(/^#/, '');
+				$("." + hashValue).click();
+			}
+
+		});
+	</script>
+
+</body>
+
+</html>
